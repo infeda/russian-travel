@@ -1,0 +1,90 @@
+*{
+  outline-width: 1px;
+  outline-style: solid;
+  outline-color: red;
+} 
+
+.page {
+  background-color: #2A2C2F;
+  color: #FFFFFF;
+  width: 100vw;
+  /*min-width: 1280px; */
+  /* мы ещё не умеем делать мобильную версию сайта, */
+  /* поэтому выше установлена минимальная ширина страницы */
+  /* выше установили ограничение по максимальной ширине */
+  margin: 0;
+  /* выше для экранов больше 1600px отцентрировали весь контент */
+  font-family: 'Inter', Arial, sans-serif;
+  padding: 0;
+}
+
+.header {
+  width: calc(100% - (48px * 2));
+  min-height: 52px;
+  margin: 28px 48px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    width: calc(100% - (24px * 2));
+    margin: 28px 24px 0;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .header {
+    margin: 16px 16px 0;
+    width: calc(100% - (16px * 2));
+    min-height: 42px;
+  }
+}
+
+.header__logo {
+  width: 176px;
+  height: 52px;
+}
+
+@media screen and (max-width: 320px) {
+  .header__logo {
+    width: 142px;
+    height: 42px;
+    object-fit: contain;
+  }
+}
+
+.header__lang-links {
+  padding: 18px 0 6px;
+}
+
+@media screen and (max-width: 320px) {
+  .header__lang-links {
+    padding: 14px 0 8px;
+  }
+}
+
+
+.header__lang-link {
+  width: 30px;
+  height: 28px;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 96.4%;
+  color: #FFFFFF;
+  
+  padding: 0;
+}
+
+@media screen and (max-width: 320px) {
+  .header__lang-link {
+    width: 22px;
+    height: 20px;
+  }
+}
+
+.header__lang-link_passive {
+  width: 29px;
+  text-decoration: none;
+  margin-left: 18px;
+}
