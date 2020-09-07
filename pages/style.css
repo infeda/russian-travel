@@ -8,7 +8,7 @@
   background-color: #2A2C2F;
   color: #FFFFFF;
   width: 100vw;
-  max-width: 1280px;
+  min-width: 1280px;
   /*min-width: 1280px; */
   /* мы ещё не умеем делать мобильную версию сайта, */
   /* поэтому выше установлена минимальная ширина страницы */
@@ -17,6 +17,7 @@
   /* выше для экранов больше 1600px отцентрировали весь контент */
   font-family: 'Inter', Arial, sans-serif;
   padding: 28px 48px 24px;
+  box-sizing: border-box;
 }
 
 @media screen and (max-width: 768px) {
@@ -32,23 +33,9 @@
 }
 
 .header {
-  width: calc(100% - (48px * 2));
   min-height: 52px;
   display: flex;
   justify-content: space-between;
-}
-
-@media screen and (max-width: 768px) {
-  .header {
-    width: calc(100% - (24px * 2));
-  }
-}
-
-@media screen and (max-width: 320px) {
-  .header {
-    width: calc(100% - (16px * 2));
-    min-height: 42px;
-  }
 }
 
 .header__logo {
@@ -81,7 +68,6 @@
   font-size: 24px;
   line-height: 96.4%;
   color: #FFFFFF;
-  
   padding: 0;
 }
 
@@ -98,9 +84,17 @@
   margin-left: 18px;
 }
 
+.content {
+  width: auto;
+}
+
+.content-box {
+  width: 984px;
+  margin: 0 auto 0;
+}
+
 .lead {
   margin: 56px auto 114px;
-  box-sizing: border-box;
 }
 
 .lead__title {
@@ -125,13 +119,94 @@
   line-height: 36px;
 }
 
+
+
 .lead__image {
-  display: block;
-  width: 984px;
+  width: 100%;
   height: 615px;
-  margin: 0 auto 0;
 }
 
 .lead__caption {
+  min-width: 159px;
+  height: 14px;
+  margin-top: 8px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 10px;
+  line-height: 14px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
 
+.intro {
+  width: 690px;
+  min-height: 429px;
+}
+
+.intro__title {
+  width: 690px;
+  min-height: 58px;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 54px;
+  line-height: 58px;
+}
+
+.intro__text {
+  width: 690px;
+  min-height: 209px;
+  margin: 40px 0 0;
+  padding: 0;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 163%;
+}
+
+.intro__list {
+  width: 690px;
+  height: 90px;
+  margin: 32px 0 0;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 18px;
+  list-style-type: none;
+  padding: 0;
+}
+
+
+
+
+
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  min-height: 18px;
+  margin: 92px auto 0;
+}
+
+.footer__links {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+}
+
+.footer__link {
+  color: #FFFFFF;
+  text-decoration: none;
+  margin: 0 18px 0 0;
+  padding: 0;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.footer__copyright {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
 }
