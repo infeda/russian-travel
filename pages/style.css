@@ -4,16 +4,25 @@
   outline-color: red;
 } 
 
+@font-face {
+  font-family: "Inter";
+  src: url("/vendor/font-inter/Inter-Regular.woff") format("woff"),
+  url("/vendor/font-inter/Inter-Regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
 .page {
+  font-family: "Inter";
   background-color: #2A2C2F;
   color: #FFFFFF;
-  width: 100vw;
-  min-width: 1280px;
+  width: 100%;
+  max-width: 1280px;
   /*min-width: 1280px; */
   /* мы ещё не умеем делать мобильную версию сайта, */
   /* поэтому выше установлена минимальная ширина страницы */
   /* выше установили ограничение по максимальной ширине */
-  margin: 0;
+  margin: 0 auto;
   /* выше для экранов больше 1600px отцентрировали весь контент */
   font-family: 'Inter', Arial, sans-serif;
   padding: 28px 48px 24px;
@@ -85,12 +94,26 @@
 }
 
 .content {
-  width: auto;
+  width: 83%;
+  margin: 0 auto 0;
 }
 
-.content-box {
-  width: 984px;
-  margin: 0 auto 0;
+@media screen and (max-width: 1024px) {
+  .content {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .content {
+    width: 100%;
+  }
+}
+
+@media (max-width: 320px) {
+  .content {
+    width: 100%;
+  }
 }
 
 .lead {
@@ -119,11 +142,8 @@
   line-height: 36px;
 }
 
-
-
 .lead__image {
   width: 100%;
-  height: 615px;
 }
 
 .lead__caption {
@@ -136,6 +156,62 @@
   line-height: 14px;
   letter-spacing: 0.15em;
   text-transform: uppercase;
+}
+
+
+@media screen and (max-width: 1024px) {
+  .lead {
+    margin-top: 48px;
+    
+  }
+
+  .lead__subtitle {
+    margin-bottom: 56px;
+  }
+
+}
+
+@media screen and (max-width: 768px) {
+  .lead {
+    margin-bottom: 88px;
+  }
+
+  .lead__image {
+    position: relative;
+    left: -24px;
+    width: calc(100% + (24px * 2));
+  }
+
+  .lead__title {
+    width: 100%;
+  }
+}
+
+@media (max-width: 320px) {
+  .lead {
+    margin-top: 48px;
+    margin-bottom: 64px;
+  }
+
+  .lead__title {
+    margin-bottom: 16px;
+    width: 100%;
+    min-height: 88px;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 44px;
+  }
+
+  .lead__subtitle {
+    margin-bottom: 40px;
+    width: 100%;
+    min-height: 40px;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+
+  }
 }
 
 .intro {
@@ -175,9 +251,126 @@
   padding: 0;
 }
 
+@media (max-width: 768px) {
+  .intro {
+    width: 100%; 
+  }
+  
+  .intro__title {
+    width: 100%;
+  }
 
+  .intro__text {
+    width: 100%;
+  }
 
+  .intro__list {
+    width: 100%;
+  }
+}
 
+@media (max-width: 320px) {
+  .intro__title {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 35px;
+  }
+}
+
+.photo-grid {
+  margin-top: 92px;
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(4, minmax(1fr, 284px);
+  grid-template-rows: repeat(3, minmax(1fr, 213px);
+  gap: 16px;
+  justify-content: center;
+}
+
+.photo-grid__item {
+  /*width: 284px;
+  height: 213px;*/
+  object-fit: cover;
+}
+
+.places {
+  max-width: 83%;
+  margin: 12px auto 0;
+}
+
+.place {
+  max-width: 100%;
+  display: grid;
+  margin-top: 80px;
+  justify-content: center;
+  justify-items: stretch;
+  grid-template-columns: 460px 456px;
+  grid-template-rows: auto 460px;
+  gap: 40px 48px;
+  grid-template-areas: 
+  "title website"
+  "image text";
+}
+
+.place__title {
+  grid-area: title;
+  align-self: end;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 72px;
+  line-height: 76px;
+  margin: 0;
+}
+
+.place__image {
+  grid-area: image;
+  align-self: stretch;
+}
+
+.place__website {
+  grid-area: website;
+  align-self: end;
+}
+
+.place__website_url-heading {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 12px;
+  letter-spacing: 0.2em;
+  color: #AAAAAA;
+}
+
+.place__text {
+  grid-area: text;
+  align-self: start;
+}
+
+.place__website_link {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  color: #FFFFFF;
+}
+
+.place__paragraph {
+  margin: 0 0 24px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 29px;
+}
+
+.cover {
+  
+}
+
+.cover__background {
+  width: 100%;
+  object-fit: cover;
+}
 
 
 .footer {
