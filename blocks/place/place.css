@@ -1,0 +1,39 @@
+.place {
+  width: 100%;
+  display: grid;
+  margin-top: 80px;
+  justify-content: center;
+  justify-items: stretch;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  gap: 40px 48px;
+  grid-template-areas: 
+  "title website"
+  "image text";
+}
+
+@media (max-width: 1024px) {
+  .place {
+    gap: 48px 32px;
+    grid-template-rows: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .place {
+    gap: 48px 28px;
+    grid-template-rows: auto; /*тут надо побобрать значения строк*/
+  }
+}
+
+@media (max-width: 540px) {
+  .place {
+    row-gap: 32px;
+    grid-template-areas:
+    "title"
+    "image"
+    "text";
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+  }
+}

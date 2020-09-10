@@ -1,0 +1,23 @@
+/*это надо привести в человеческий вид */
+.intro-box {
+  width: 83%;
+  margin: 0 auto;
+}
+
+@media (max-width: 1024px) {
+  .intro-box {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .intro-box {
+    width: 100%;
+  }
+}
+
+@media (max-width: 540px) {
+  .intro-box {
+    width: 100%;
+  }
+}

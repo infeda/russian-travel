@@ -1,0 +1,7 @@
+.footer__list-element {
+  margin-bottom: 32px;
+}
+
+.footer__list-element:last-of-type {
+  margin-bottom: 48px;
+}
