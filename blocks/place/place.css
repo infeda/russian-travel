@@ -15,14 +15,12 @@
 @media (max-width: 1024px) {
   .place {
     gap: 48px 32px;
-    grid-template-rows: auto;
   }
 }
 
 @media (max-width: 768px) {
   .place {
     gap: 48px 28px;
-    grid-template-rows: auto; /*тут надо побобрать значения строк*/
   }
 }
 
@@ -34,6 +32,5 @@
     "image"
     "text";
     grid-template-columns: 100%;
-    grid-template-rows: auto;
   }
 }

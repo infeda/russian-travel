@@ -3,10 +3,8 @@
   color: #FFFFFF;
   width: 100%;
   max-width: 1280px;
-  /*min-width: 1280px; */
-  /* мы ещё не умеем делать мобильную версию сайта, */
+  min-width: 320px;
   margin: 0 auto;
-  font-family: 'Inter', Arial, sans-serif;
   padding: 28px 48px 24px;
   box-sizing: border-box;
 }

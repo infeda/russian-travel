@@ -1,7 +1,9 @@
-.footer__list-element {
-  margin-bottom: 32px;
-}
+@media screen and (max-width: 540px) {
+  .footer__list-element {
+    margin-bottom: 32px;
+  }
 
-.footer__list-element:last-of-type {
-  margin-bottom: 48px;
+  .footer__list-element:last-of-type {
+    margin-bottom: 48px;
+  }
 }
