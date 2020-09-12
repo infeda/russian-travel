@@ -1,5 +1,5 @@
 # Проект 3: Путешествие по России
-[Ссылка на GitPage] (https://infeda.github.io/russian-travel/)
+[Ссылка на GitPage](https://infeda.github.io/russian-travel/)
 
 ### Обзор
 * Красивые фоточки
@@ -14,9 +14,6 @@
 
 * [Ссылка на макет в Figma](https://www.figma.com/file/OyRWEjU6wBwRe1hapzQoLx/Sprint-3%3A-Russia-%2F-desktop-%2B-mobile?node-id=28503%3A0)
 
-**Что можно усовершенствовать**
-
-* Нужно придумать, как убрать горизонтальный скролл без overflow-x: hidden. Пока знаю, что он появляется из-за lead__image.
 
 
 Приятного просмотра!
