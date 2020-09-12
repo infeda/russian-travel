@@ -41,9 +41,3 @@
 @import url('../blocks/intro/__text/intro__text.css');
 @import url('../blocks/intro/__list/intro__list.css');
 @import url('../blocks/intro/__font-normal/intro__font-normal.css');
-
-*{
-  outline-width: 1px;
-  outline-style: solid;
-  outline-color: red;
-} 
