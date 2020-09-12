@@ -5,7 +5,7 @@
   font-style: normal;
   font-weight: normal;
   font-size: 30px;
-  line-height: 36px;
+  line-height: 120%;
 }
 
 @media screen and (max-width: 1024px) {
@@ -20,13 +20,20 @@
   }
 }
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 640px) {
   .lead__subtitle {
-    font-size: 22px;
+    font-size: 25px;
+
   }
 }
 
 @media (max-width: 540px) {
+  .lead__subtitle {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 360px) {
   .lead__subtitle {
     margin-bottom: 40px;
     font-size: 16px;
