@@ -24,28 +24,24 @@
 @media (max-width: 640px) {
   .lead__title {
     font-size: 70px;
-    line-height: 110%;
   }
 }
 
 @media (max-width: 540px) {
   .lead__title {
     font-size: 65px;
-    line-height: 110%;
   }
 }
 
 @media (max-width: 490px) {
   .lead__title {
     font-size: 56px;
-    line-height: 110%;
   }
 }
 
 @media (max-width: 425px) {
   .lead__title {
     font-size: 51px;
-    line-height: 110%;
   }
 }
 
@@ -53,6 +49,5 @@
   .lead__title {
     margin-bottom: 16px;
     font-size: 40px;
-    line-height: 44px;
   }
 }

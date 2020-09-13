@@ -3,11 +3,18 @@
   width: 100%;
 }
 
-@media (max-width: 540px) { 
+@media (max-width: 650px) { 
   .place__image {
     position: relative;
+    left: -24px;
+    width: calc(100% + (24px * 2));
+    padding-bottom: 0;
+  }
+}
+
+@media (max-width: 540px) { 
+  .place__image {
     left: -16px;
     width: calc(100% + (16px * 2));
-    padding-bottom: 0;
   }
 }

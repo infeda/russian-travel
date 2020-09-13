@@ -16,11 +16,3 @@
     margin-top: 64px;
   }
 }
-
-
-@media (max-width: 540px) {
-  .footer {
-    display: inline-block;
-    margin-top: 64px;
-  }
-}
