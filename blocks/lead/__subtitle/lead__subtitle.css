@@ -11,25 +11,21 @@
 @media (max-width: 1024px) {
   .lead__subtitle {
     margin-bottom: 56px;
-  }
-}
-
-@media (max-width: 768px) {
-  .lead__subtitle {
-    width: 100%;
+    width: 640px;
   }
 }
 
 @media (max-width: 640px) {
   .lead__subtitle {
     font-size: 25px;
-
+    width: 500px;
   }
 }
 
 @media (max-width: 540px) {
   .lead__subtitle {
     font-size: 20px;
+    width: 335px;
   }
 }
 
@@ -38,5 +34,6 @@
     margin-bottom: 40px;
     font-size: 16px;
     line-height: 20px;
+    width: 100%;
   }
 }
